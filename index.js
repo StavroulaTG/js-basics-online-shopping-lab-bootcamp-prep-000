@@ -59,8 +59,7 @@ function viewCart() {
     }
 
 function removeFromCart(item) {
-  item=item.splice()
-  return item
+  return [item, ...cart]
 }
 
 function placeOrder(cardNumber) {
