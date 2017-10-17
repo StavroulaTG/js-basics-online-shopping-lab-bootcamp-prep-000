@@ -59,7 +59,7 @@ function viewCart() {
     }
 
 function removeFromCart(item) {
-  item=item.slice(1)
+  item=item.splice()
   return item
 }
 
