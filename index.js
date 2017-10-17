@@ -1,13 +1,16 @@
 var cart = [];
 
+
 function getCart() {
  return cart;
 }
+
 
 function setCart(c) {
   cart = c;
   return cart;
 }
+
 
 function addToCart(item) {
   var itemName = item;
@@ -17,6 +20,7 @@ function addToCart(item) {
   console.log(itemName + ` has been added to your cart.`);
   return cart;
  }
+
 
 function viewCart() {
   if (!cart.length) {
@@ -57,6 +61,7 @@ function viewCart() {
       return currentTotal;
     }
 
+
 function removeFromCart(item) {
   for (var i = 0; i < cart.length; i++) {
     if (cart[i].hasOwnProperty(item)) {
@@ -67,13 +72,12 @@ function removeFromCart(item) {
   return console.log("That item is not in your cart.");
 }
 
+
 function placeOrder(cardNumber) {
   if (!cardNumber) {
-    return console.log("Sorry, we don't have a credit card on file for you.")
+    console.log("Sorry, we don't have a credit card on file for you.")
   }
 
   console.log(`Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`);
-
     cart = []
-
 }
