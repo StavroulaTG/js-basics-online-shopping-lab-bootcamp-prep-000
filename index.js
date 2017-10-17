@@ -47,7 +47,11 @@ function viewCart() {
     function total() {
       var totalPrice = [];
       for (var i = 0; i < cart.length; i++) {
-
+        var cartObject = cart[i];
+        var itemName = Object.keys(cartObject)[0];
+        var itemPrice = cartObject[itemName];
+        totalPrice.push(itemPrice);
+      }
       var currentTotal = totalPrice.reduce(function(a, b) {
         return a + b;
       }, 0);
