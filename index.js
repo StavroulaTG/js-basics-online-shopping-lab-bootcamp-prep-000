@@ -52,7 +52,7 @@ function viewCart() {
       }, 0);
       return currentTotal;
     }
-    
+
 function removeFromCart(item) {
   // write your code here
 }
