@@ -59,8 +59,8 @@ function viewCart() {
     }
 
 function removeFromCart(item) {
-item = item.slice(1)
-return item
+  item=item.slice(1)
+  return item
 }
 
 function placeOrder(cardNumber) {
