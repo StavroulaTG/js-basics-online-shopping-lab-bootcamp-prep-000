@@ -46,6 +46,7 @@ function viewCart() {
 
     function total() {
       var totalPrice = [];
+      for (var i = 0; i < cart.length; i++) {
 
       var currentTotal = totalPrice.reduce(function(a, b) {
         return a + b;
